@@ -11,6 +11,8 @@ const updateRoute = require('./routes/updateRoute');
 
 const deleteRoute = require('./routes/deleteRoute');
 
+const loginAuth = require('./routes/loginAuth');
+
 // --- ---
 
 const app = express();
@@ -27,6 +29,7 @@ app.use("/Crud/v1",updateRoute);
 
 app.use("/Crud/v1",deleteRoute);
     
+app.use("/Crud/v1",loginAuth);
 
 module.exports = app;
 

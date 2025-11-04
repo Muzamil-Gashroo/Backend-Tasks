@@ -1,7 +1,13 @@
 
 const mongoose = require('mongoose');
 
-const URL = 'mongodb://127.0.0.1:27017/mongoose-crud'
+
+// const env = require("dotenv").config();
+
+const URL = 'mongodb://127.0.0.1:27017/mongoose-crud';
+// console.log("chalan");
+
+
 
 const connection = async ()=>{
 
